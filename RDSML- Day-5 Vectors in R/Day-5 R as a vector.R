@@ -62,3 +62,21 @@ new_seq = c(seq(1, 10, by=3))
 new_seq
 
 # vectors can have character
+names = c("Elias", "Mahfuza", "Ashraf", "Chaitali")
+names
+class(names)
+names[2]
+names[2:4]
+
+# when we use range in sequence, we use colon (:)
+# using first or second bracket in place of third bracket will give wrong result
+# if we expect data out of range, it will say NA 
+
+names[3:4]
+names[10]
+names{10}
+
+# Assigning names to vector values
+my_values = c(4, 7, 9, 11)
+names(my_values) = c("a", "b", "c", "d")
+names(my_values)
