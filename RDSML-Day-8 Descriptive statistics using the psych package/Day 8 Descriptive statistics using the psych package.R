@@ -30,5 +30,20 @@ head(nycflights13::flights)
 
 # head() shows a part of the data set from the top in any range
 
-# 
-# 
+summary(distance)
+
+# summary is the base package in R
+# describe is from psych package
+
+describe(distance)
+
+# when we want to see or descriptive analysis 
+# for more than one column, we will use cbind()
+# comma in between every column
+
+demo = cbind(arr_delay, dep_delay, distance)
+demo
+describe(demo)
+
+# f1 key will clarify or explain any colomn head in details
+
