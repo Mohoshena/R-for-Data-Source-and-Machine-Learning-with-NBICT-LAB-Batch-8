@@ -38,8 +38,8 @@ summary(distance)
 describe(distance)
 
 # when we want to see or descriptive analysis 
-# for more than one column, we will use cbind()
-# comma in between every column
+# for more than one column, we will use cbind() cbind function
+# comma in between every column head will be used 
 
 demo = cbind(arr_delay, dep_delay, distance)
 demo
