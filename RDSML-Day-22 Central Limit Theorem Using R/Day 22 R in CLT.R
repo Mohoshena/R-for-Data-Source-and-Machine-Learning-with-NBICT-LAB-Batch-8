@@ -1,0 +1,59 @@
+# Demonstration of CLT
+
+# Generate 10000 numberts of uniform distribution
+r<- runif(1000)
+r
+hist(r,100)
+
+r <- runif(10000)
+r
+hist(r)
+mean<-mean(r)
+sdr<-sd(r)
+
+
+#Draw three random samples from the distribution
+samples1<- sample(r, 4)
+samples2<- sample(r, 4)
+samples3<- sample(r, 4)
+
+
+# Draw three random samples from the distribution
+samples1 <- sample(r, 4)
+samples1
+samples2 <- sample(r, 4)
+samples2
+samples3 <- sample(r, 4)
+samples3
+mean(samples1)
+mean(samples2)
+mean(samples3)
+# Run a for loop
+cl4 <- mean(sample(r,4))
+cl4
+for (i in 1:1000){
+  cl4 <- c(cl4, mean(sample(r,4)))
+}
+cl4
+hist(cl4)
+hist(cl4)
+cl10 <- mean(sample(r,10))
+for (i in 1:1000){
+  cl10 <- c(cl10, mean(sample(r,10)))
+}
+hist(cl10)
+cl100 <- mean(sample(r,100))
+for (i in 1:1000){
+  cl100 <- c(cl100, mean(sample(r,100)))
+}
+hist(cl100)
+cl5 <- mean(sample(r,5))
+for (i in 1:999){
+  cl5 <- c(cl5, mean(sample(r,5)))
+}
+hist(cl5)
+cl5 <- mean(sample(r,5))
+for (i in 1:999){
+  cl5 <- c(cl5, mean(sample(r,5)))
+}
+hist(cl5)
